@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class DTDRunner {
 
-    private static final String XML_PATH = "data/data1.xml";
+    private static final String XML_PATH = "src/xml/university.xml";
 
     public static void main(String[] args){
         try {

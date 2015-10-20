@@ -1,0 +1,43 @@
+<!ELEMENT university (faculty+)>
+<!ELEMENT faculty (id, name, head_of_faculty, chair+)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST faculty orders IDREFS #IMPLIED>
+
+<!ENTITY % contacts "phoneNumber CDATA #REQUIRED
+         eMail CDATA #REQUIRED">
+
+<!ELEMENT head_of_faculty (id, first_name, mid_name, last_name)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT mid_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ATTLIST head_of_faculty %contacts;>
+<!ATTLIST faculty image ENTITY #REQUIRED>
+<!ENTITY facultyimage SYSTEM "../web/images/fit.gif" NDATA gif>
+
+<!ELEMENT chair (id, name, head_of_chair, speciality+, lecturer+)>
+<!ATTLIST chair chair_order ID #REQUIRED>
+
+<!ELEMENT head_of_chair (id, first_name, mid_name, last_name)>
+<!ATTLIST head_of_chair %contacts;>
+
+<!ELEMENT speciality (id, name, group+)>
+
+<!ELEMENT group (id, name, course, student+)>
+<!ELEMENT course (#PCDATA)>
+<!ATTLIST group type (baccalaureate | magistracy) "baccalaureate">
+
+<!ELEMENT student (id, first_name, mid_name, last_name, birth_date)>
+<!ELEMENT birth_date (#PCDATA)>
+<!ATTLIST student passport ID #REQUIRED
+                  %contacts;>
+
+
+<!ELEMENT lecturer (id, first_name, mid_name, last_name, position, degree?)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT degree (#PCDATA)>
+<!ATTLIST lecturer %contacts;>
+
+<!NOTATION jpeg SYSTEM "image/jpeg">
+<!NOTATION gif SYSTEM "image/gif">
+
