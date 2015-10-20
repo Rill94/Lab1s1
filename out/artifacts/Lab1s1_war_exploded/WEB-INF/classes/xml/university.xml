@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE university SYSTEM "/Users/cake4rill/IdeaProjects/Lab1s1/src/xml/university.dtd">
+<university>
+  <faculty image="facultyimage">
+    <id>1</id>
+    <name>ФИТ</name>
+    <head_of_faculty
+      phoneNumber="89288468294"
+      eMail="someaddress@gmail.com">
+      <id>1</id>
+      <first_name>Анатолий</first_name>
+      <mid_name>Александрович</mid_name>
+      <last_name>Галкин</last_name>
+    </head_of_faculty>
+    <chair>
+      <id>1</id>
+      <name>ИСПИ</name>
+      <head_of_chair
+        phoneNumber="89288468294"
+        eMail="someaddress@gmail.com">
+        <id>1</id>
+        <first_name>Илья</first_name>
+        <mid_name>Евгеньевич</mid_name>
+        <last_name>Жигалов</last_name>
+      </head_of_chair>
+      <speciality>
+        <id>1</id>
+        <name>Информационные системы и технологии</name>
+        <group type="baccalaureate">
+          <id>1</id>
+          <name>ИСТ-115</name>
+          <course>1</course>
+          <student passport="1134 537860" phoneNumber="89288468294" eMail="annamakarova@gmail.com">
+            <id>1</id>
+            <first_name>Анна</first_name>
+            <mid_name>Сергеевна</mid_name>
+            <last_name>Макарова</last_name>
+            <birth_date>1997-11-08</birth_date>
+          </student>
+        </group>
+        <group type="magistracy">
+          <id>2</id>
+          <name>ИСмм-214</name>
+          <course>1</course>
+          <student passport="1184 537860" phoneNumber="89288468294" eMail="ivanov@gmail.com">
+            <id>2</id>
+            <first_name>Дмитрий</first_name>
+            <mid_name>Викторович</mid_name>
+            <last_name>Иванов</last_name>
+            <birth_date>1993-11-08</birth_date>
+          </student>
+        </group>
+      </speciality>
+      <speciality>
+        <id>2</id>
+        <name>Программная инженерия</name>
+        <group type="baccalaureate">
+          <id>3</id>
+          <name>ПРИ-115</name>
+          <course>1</course>
+          <student passport="1234 567890" phoneNumber="89288468294" eMail="ivanpupkin@gmail.com">
+            <id>3</id>
+            <first_name>Иван</first_name>
+            <mid_name>Васильевич</mid_name>
+            <last_name>Пупкин</last_name>
+            <birth_date>1998-10-05</birth_date>
+          </student>
+          <student passport="1214 567390" phoneNumber="89288468294" eMail="alexsidorov@gmail.com">
+            <id>4</id>
+            <first_name>Александр</first_name>
+            <mid_name>Николаевич</mid_name>
+            <last_name>Сидоров</last_name>
+            <birth_date>1998-01-11</birth_date>
+          </student>
+        </group>
+        <group type="magistracy">
+          <id>4</id>
+          <name>ПРИм-114</name>
+          <course>1</course>
+          <student passport="1234 537890" phoneNumber="89288468294" eMail="volkova@gmail.com">
+            <id>5</id>
+            <first_name>Мария</first_name>
+            <mid_name>Александровна</mid_name>
+            <last_name>Волкова</last_name>
+            <birth_date>1992-12-08</birth_date>
+          </student>
+        </group>
+      </speciality>
+      <lecturer phoneNumber="89288468294" eMail="someaddress@gmail.com">
+        <id>1</id>
+        <first_name>Алексей</first_name>
+        <mid_name>Владимирович</mid_name>
+        <last_name>Костров</last_name>
+        <position>Профессор</position>
+        <degree>д.т.н.</degree>
+      </lecturer>
+      <lecturer phoneNumber="89288468294" eMail="someaddress@gmail.com">
+        <id>2</id>
+        <first_name>Руслан</first_name>
+        <mid_name>Ильич</mid_name>
+        <last_name>Макаров</last_name>
+        <position>Профессор</position>
+        <degree>д.т.н.</degree>
+      </lecturer>
+    </chair>
+
+  </faculty>
+</university>
